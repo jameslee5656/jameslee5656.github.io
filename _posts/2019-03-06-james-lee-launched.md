@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "James Lee, National Taipei University
+title: "James Lee, National Taipei University"
 date: 2019-03-06
 ---
 This is my first post, hope that the reader of my website have a better perception of me.
