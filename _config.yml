@@ -1,26 +1,66 @@
-title: MySite
-description: Hope this give a better understand of me.
-show_downloads: true
+# Site
+title:              Code Utopia
+bio:                'Present by James Lee(PING YI LEE)'
+description:        "Code Utopia"
+locale:             en_US
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+background_image:   /images/bg.jpg
+# Tip: The color palette and other styles can be configured in /_sass/lib/_vars.scss
+formspree_thankyou_page: /thank-you
 
-baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://jameslee5656.github.io" # change this to the base hostname & protocol for your site
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    author:
 
-google_analytics:
-# cayman-blog date format
-# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
-cayman-blog:
-  date_format: "%b %-d, %Y"
+# Jekyll
+permalink:          /blog/:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
 
-theme: # leave it empty
+# Comments
+disqus_shortname:   default
 
-# social
-author: "James Lee"
-image: /thumbnail-jumbo.png
-twitter:
-  username: lorepirri
+# Social
+analytics-id:       "default"
+twitter:            default
+facebook:           default
+instagram:          default
+github:             default
 
-plugins:
-  - jekyll-target-blank
+# personal
+location:           Los Angeles, CA
+phone:              310-318-5555
+email:              info@default.com
 
-target-blank:
-    rel: nofollow
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+jekyll-mentions:
+    base_url: https://github.com
+
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile, old]
