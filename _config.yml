@@ -37,16 +37,15 @@ sass:
 disqus_shortname:   default
 
 # Social
-analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+analytics-id:       "Utopia Code"
+twitter:            blackdragon5656
+facebook:           james.lee5656
+instagram:          james.lee5656
+github:             jameslee5656
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+location:           New Taipei City, Sanxia Dis
+email:              james.lee56566@gmail.com
 
 # Gems
 gems:

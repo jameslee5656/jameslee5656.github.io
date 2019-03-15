@@ -1,27 +1,28 @@
 ---
 layout: page
-title: Jekyll Theme - About - Massively
-description: When building a website it's helpful to see what the focus of your site is. This page is an example of how to show a website's focus.
+title: Code Utopia - About
+description: This is my site's home page hope is clearful for you to read.
 sitemap:
     priority: 0.7
-    lastmod: 2017-11-02
-    changefreq: weekly
+    lastmod: 2019-03-12
+    changefreq: depends
 ---
 ## About our Site
 
-<span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
-
-Making steady content and conveying it well takes a great deal of research and, hence, time and exertion. Building a profound established comprehension of your target customer needs is critical as your principle objective ought to be to fulfill their requirements as awesome content. You should need to enhance their lives. Having significant content like this may not be simple by any methods. Be that as it may, in any case, it's a fundamental apparatus in the event that you expect to grow a fruitful and supportable business in the present web focused world.
-
-Receiving the benefits of content is a certain something. Be that as it may, it's so substantially less demanding once you begin conveying all the more successfully. The profitable content thought isn't just about bragging your item's capacities and general worth or your organization's achievements. You should concentrate less on advertising how awesome your item is and rather concentrate on indicating how valuable it is. This is a client focused approach as it concentrates on their issues and your answer for them. Making yourself fundamental is critical.
 
 ### Content is Imortant
 <div class="box">
   <p>
-  In saying that, a one-measure fits-all approach won't do the trick with regards to content promoting. Rather, an emphasis on making remarkable, high caliber and totally genuine content that is engaging, helpful and fascinating for customers will get you the crown. From content, video and symbolism to infographics, studies, online courses and podcasts, whatever your favored content medium is, guarantee it is shareable and pertinent to your industry.
+  <span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
+  Welcome to my site, this page will tell you more about me. My name is James Lee(LEE Ping Yi), I am a National Taipei University student who majors in Computer Science & Information Engineering. I am a hardworking student and willing to devote my whole effort in what I love. Coding is my passion and I`m motivated enough to learn and adapt for different projects. Although my mother language is Chinese I never forget the importance of English and keep learning it is one of my priority. I am able to read quickly through different papers and have a comprehensive perspective. To impove my speaking skills I hang out with my foreign friends and communicate with them fluently. That`s not giving mush point, is it? So read more down bellow.
   </p>
 </div>
 
-<span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
+I am a child of Kaoshuing, I live there through my childhood and teen years. In those years I struggle to keep my score high, which hardly have time for myself. However, I do enjoy reading within a limit time. I have wide range of book taste, from fantasy novel to self-improvement, which not only keep myself entertain but improve through the words and story in it. Among all books I love Science Fiction the most, and is the main reason that I have my passion in writing code. I always imagin a world that we may immerse myself in a Fantasy world like Watts who win back the keys for Easter Egg(plot from <I>Ready Player One</I>), maybe that is not the near future, but I do fully believe that one day I may fly my wing like the fairy in <I>Harry Potter</I>, until then I am and will devote myself in this fascinating digital world.
 
-On social media, we may share our own thoughts and advance our image notwithstanding spreading musings for different associations and affiliations. With such a critical number of associations with people and relationship on social media, our experience can be over-burden with a considerable measure of information.
+To fulfill my dream, I applied to Nation Taipei University which luckly to be one her's students. In my freshman year I tried my best to grasp the idea of coding which turn out is not the magic wand I had expected. But beacause of those up and downs, I have a better picture of this magic back box that I am actually dealing with. To improve myself I sign up for the lab of my current guiding professor <a href="http://www.csie.ntpu.edu.tw/~yschen/">Yuh-Shyan Chen</a> in the second year. Thanks to his guidance I felt in love with my own major again. I realize that computer scicence is still full of magic but needs a bit rule and some passion it can be really interesting.
+
+Now is my third year, I am currently working on a project that will be fully elaborate in my blogs, if it interest you please take a visit. It will tell you what we are doing and hopelly intrigue to ask some question. My contanct will be down below, if there is any thing that you think can be imporved please leave no hesitant and contact me immediately.
+
+
+<!-- <span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span> -->
