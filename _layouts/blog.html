@@ -25,7 +25,6 @@
 					<nav id="nav">
 
             {% include nav.html %}
-						
 					</nav>
 
 				<!-- Main -->
@@ -37,46 +36,29 @@
               <p>Code is kind of tricky; however, coding is like doing magic, spell out your special spell than the compiler will do the hard work for you. So have some time learn coding, it will be the most fustrating but satisfied experience you ever had.</p>
             </header>
 						<p>
-							There will be 
+							In this page you will see my personal project and some of my personal view of my important experience. My current ongoing project is Tracker which you may have a much well perspective in my intoduction, In this project we mostly use <b>Python, Html/CSS , JavaScript, Java</b>. If you like to learn more, welcome to my <a href="https://github.com/jameslee5656/2018Project-Tracker">Github</a> 
 						<p>
-						</p>
-							At that point, rather than pushing something superfluous to your users, you can give them something that will stick.
-							You'll give them something they can identify with and be slanted to share with their companions and associates. Perhaps they'll even be slanted to work with you later on!
-							Having an advancement technique that is excessively unbending isn't astute on the grounds that there is no space for solid spontaneous creation. Having the capacity to change your advertising procedure will prompt more deals and arrangements.
-						</p>
 
           </article>
-                	<script>
-					      console.log(site.posts);
-					</script>
-					<!-- Post -->
-						{% for post in site.posts %}
-						{% assign mod3 = forloop.index | modulo: 3 %}
-							<article>
-								<header>
-									<span class="date">{{ post.date | date_to_string }}</span>
-									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-								</header>
-								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-								<p>{{ post.excerpt }}</p>
-								<ul class="actions">
-									<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-								</ul>
-							</article>
-							{% if mod3 == 0 %}
-							<article>
-								<header>
-									<h2><a href="#">Sponsored</a></h2>
-								</header>
+          <article class="">
+      			<div id="archives">
+				{% for category in site.categories %}
+				  <div class="archive-group" style="padding-bottom: 1.2em;">
+				    {% capture category_name %}{{ category | first }}{% endcapture %}
+				    <div id="#{{ category_name | slugize }}"></div>
+				    
+				    <h2 class="category-head">{{ category_name }}</h2>
+				    <a name="{{ category_name | slugize }}"></a>
+				    {% assign sorted = site.categories[category_name] | sort="title"%}
+				    {% for post in sorted %}
+					    <article class="archive-item">
+					      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+					    </article>
+				    {% endfor %}
+				  </div>
+				{% endfor %}
 
-							</article>
-							{% endif %}
-						{% endfor %}
-
-					</section>
-
-					</div>
-
+		</article>
 				<!-- Footer -->
         {% include foot.html %}
 

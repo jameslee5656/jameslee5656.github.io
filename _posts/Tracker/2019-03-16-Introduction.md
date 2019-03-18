@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title:  "Introduction to Tracker"
+title:  "1.Introduction to Tracker"
 date:   2019-3-16
 categories: Tracker
 ---
@@ -39,7 +39,6 @@ categories: Tracker
 				<ul>
 					<div class='row'>
 						<img src="/images/PI.jpg" style="width: 32em;height:26em;">
-						<img src="/images/miband.jpeg" style="width: 18em;height:24em;">
 					</div>
 					<li>
 						Connect with Miband and transmit health data through NBIOT
@@ -50,7 +49,36 @@ categories: Tracker
 			<dd>
 				<ul>
 					<li>
-						Connect with Miband and transmit health data through NBIOT
+						Receive data, transmit warning signal.
+					</li>
+				</ul>
+			</dd>
+			<dt><h3>Sport Band</h3></dt>
+			<dd>
+				<ul>
+					<li>
+						We use two types of sport band
+						<div class='row' style="padding-bottom: 1.2em;">
+							<div class="column">
+								<img src="/images/miband.jpeg" style="width: 14em;height:20em; padding: 1.4em;">
+								<h4>MiBand 2</h4>
+							</div>
+							<div class="column">
+								<img src="/images/golife.png" style="width: 20em;height:20em;">
+								<h4>Golife Care-X-HR</h4>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</dd>
+			<dt><h3>Server</h3></dt>
+			<dd>
+				<ul>
+					<li>
+						System : Ubuntu 16.04
+					</li>
+					<li>
+						Data Base : Mongo DB, For data Storing, Retrieving ,and Delete
 					</li>
 				</ul>
 			</dd>
