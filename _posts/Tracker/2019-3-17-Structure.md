@@ -5,6 +5,9 @@ date: 2019-3-17
 categories: Tracker
 ---
 
-<img style="display: block;
-  margin-left: auto;
-  margin-right: auto;" src="/images/structure.png">
+<body>
+	<img style="display: block;
+	  margin-left: auto;
+	  margin-right: auto;" src="/images/structure.png">
+</body>
+

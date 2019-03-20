@@ -2,109 +2,85 @@
 layout: null
 title: Code Utopia - Home Page
 description: This is my site`s home page hope is clearful enough for you to read.
-<!-- sitemap:
+sitemap:
     priority: 1.0
     lastmod: 2019-03-12
-    changefreq: depend on my schedule -->
+    changefreq: depend on my schedule
 ---
 <!DOCTYPE HTML>
-<!--
+
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
   Jekyll integration by somiibo.com
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
-	<!-- <head> -->
-    <!-- {% include head.html %} -->
+	<head>
+    {% include head.html %}
 
 
-	<!-- </head> -->
-	<!-- <body class="is-loading"> -->
+	</head>
+	<body class="is-loading">
 
 		<!-- Wrapper -->
-			<!-- <div id="wrapper" class="fade-in"> -->
+			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
-					<!-- <div id="intro">
+					<div id="intro">
             <h1>{{site.title}}</h1>
 						<h2>A place to code like in paradise</h2>
 						<p>This is a place where I code, write my thoughts and tell stories, hope you have a good time here.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
-					</div> -->
+					</div>
 
 				<!-- Header -->
-					<!-- <header id="header">
+					<header id="header">
 						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
 					</header>
- -->
+
 				<!-- Nav -->
-					<!-- <nav id="nav"> -->
+					<nav id="nav">
 
-            <!-- {% include nav.html %} -->
+            {% include nav.html %}
 
-					<!-- </nav> -->
+					</nav>
 
 				<!-- Main -->
-					<!-- <div id="main"> -->
+					<div id="main">
 						<!-- Featured Post -->
-<!-- 							<article class="post featured">
+							<article class="post featured">
 								<header class="major">
 									<h2><a href="#">Code Utopia</a></h2>
 									<p>This website is written to sharpen my own both coding and telling skills which hope you may understand.</br>
 										If there is any thing that you think is unappropriate or any thing that you will like to contribute, please contact me.<address align='right'>written by <a href="mailto:james.lee56566@gmail.com" style="p.indent{ padding-right: 1.8em">James Lee</a></address></p>
 								</header>
-								<a href="#" class="image main"><img src="{{ "/images/NTPU.jpg" | absolute_url }}" alt="" /></a>
+								<a href="#" class="image main"><img src="{{ '/images/NTPU.jpg' | absolute_url }}" alt="" /></a>
                 <p>There will be posts about my projects, thoughts, and my learning experience. The About section is mainly my experiecne and the way that you may contact me. Blog section is my post which is organized by different topic. Element Section is for the reference I use and environment that I build my own project.</p>
 
 							</article>
- -->
+
 						<!-- Posts -->
-<!-- 							<section class="posts">
-                {% for post in site.posts limit:3 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-  								<article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-					<header>
-						<h2><a href="#">Sponsored</a></h2>
-					</header>
 
-  				  </article>
-                  {% endif %}
-                {% endfor %}
-
-							</section> -->
 
 						<!-- Footer -->
-<!-- 							<footer>
+							<footer>
                 <ul class="actions">
-                  <li><a href="{{ "/categories/" | absolute_url }}" class="button">Our Blog</a></li>
+                  <li><a href="{{ "/categories/" | absolute_url }}" class="button">My Blog</a></li>
                 </ul>
 							</footer>
 
-					</div> -->
+					</div>
 
 				<!-- Footer -->
-<!--         {% include foot.html %}
+        {% include foot.html %}
 
-			</div> -->
+			</div>
 
 		<!-- Scripts -->
-<!-- 		{% include scripts-main.html %}
+		{% include scripts-main.html %}
     {% include tracking.html %}
 
-	</body> -->
+	</body>
 </html>

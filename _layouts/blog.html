@@ -41,13 +41,15 @@
 
           </article>
           <article class="">
-      			<div id="archives">
+          		<div style="text-align: center"><h2 style="font-size: 36px;">My Blog List</h2></div>
+      			<div id="archives" class="row">
+      				
 				{% for category in site.categories %}
-				  <div class="archive-group" style="padding-bottom: 1.2em;">
+				  <div class="6u 12u$(small)" style="padding-bottom: 1.2em;">
 				    {% capture category_name %}{{ category | first }}{% endcapture %}
 				    <div id="#{{ category_name | slugize }}"></div>
 				    
-				    <h2 class="category-head">{{ category_name }}</h2>
+				    <h3 class="category-head">{{ category_name }}</h3>
 				    <a name="{{ category_name | slugize }}"></a>
 				    {% assign sorted = site.categories[category_name] | sort="title"%}
 				    {% for post in sorted %}
