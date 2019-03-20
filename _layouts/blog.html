@@ -45,7 +45,7 @@
       			<div id="archives" class="row">
       				
 				{% for category in site.categories %}
-				  <div class="6u 12u$(small)" style="padding-bottom: 1.2em;">
+				  <div class="6u 18u$(small)" style="padding-bottom: 1.2em;">
 				    {% capture category_name %}{{ category | first }}{% endcapture %}
 				    <div id="#{{ category_name | slugize }}"></div>
 				    

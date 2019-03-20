@@ -56,8 +56,8 @@ gems:
   - jekyll-gist
   - jekyll-paginate
 
-paginate: 6
-paginate_path: "/:categories/page:num/"
+# paginate: 6
+# paginate_path: "/:categories/page:num/"
 
 jekyll-mentions:
     base_url: https://github.com
