@@ -7,8 +7,14 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    autoprefixer-rails (9.5.0)
+      execjs
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
     colorator (1.1.0)
     concurrent-ruby (1.1.5)
+    execjs (2.7.0)
     faraday (0.15.4)
       multipart-post (>= 1.2, < 3)
     ffi (1.10.0)
@@ -29,6 +35,9 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-bootstrap-sass (0.1.0)
+      bootstrap-sass (~> 3.3)
+      jekyll (>= 2.5)
     jekyll-feed (0.7.2)
     jekyll-gist (1.5.0)
       octokit (~> 4.2)
@@ -60,6 +69,7 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+    rake (12.3.2)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -71,6 +81,9 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (2.0.1)
+      ffi (~> 1.9)
+      rake
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
@@ -83,7 +96,9 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  bootstrap-sass
   jekyll (~> 3.2.1)
+  jekyll-bootstrap-sass
   jekyll-feed
   jekyll-gist
   jekyll-mentions

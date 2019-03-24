@@ -31,10 +31,7 @@ kramdown:
   enable_coderay:   false
 mathjax:            true
 sass:
-  sass_dir:
-    load_paths:
-        - _sass
-        - css
+  sass_dir: _sass
   style:            compressed
 
 
