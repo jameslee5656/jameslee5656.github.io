@@ -31,8 +31,12 @@ kramdown:
   enable_coderay:   false
 mathjax:            true
 sass:
-  sass_dir:         _sass
+  sass_dir:
+    load_paths:
+        - _sass
+        - css
   style:            compressed
+
 
 # Comments
 disqus_shortname:   default
