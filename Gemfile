@@ -6,5 +6,5 @@ gem "jekyll-gist"
 gem 'jekyll-mentions'
 gem 'jekyll-feed'
 gem 'jekyll-paginate'
-gem 'bootstrap-sass'
-gem 'jekyll-bootstrap-sass'
+# gem 'bootstrap-sass'
+# gem 'jekyll-bootstrap-sass'

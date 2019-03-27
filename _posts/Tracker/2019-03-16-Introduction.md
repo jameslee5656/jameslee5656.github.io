@@ -5,7 +5,7 @@ date:   2019-3-16
 categories: Tracker
 ---
 <header>
-	<p>This is a introduction to our on going project.</p>
+	<p>This is a introduction to our ongoing project.</p>
 </header>
 
 <div class="row">	
