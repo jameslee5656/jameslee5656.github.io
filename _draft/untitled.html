@@ -57,3 +57,22 @@
     {% endif %}
     {% endfor %}
 </section>
+
+
+<div id="archives" class="row">
+{% for category in site.categories %}
+  <div class="6u 18u$(small)" style="padding-bottom: 1.2em;">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <div id="#{{ category_name | slugize }}"></div>
+    
+    <h3 class="category-head">{{ category_name }}</h3>
+    <a name="{{ category_name | slugize }}"></a>
+    {% assign sorted = site.categories[category_name] | sort="title"%}
+    {% for post in sorted %}
+	    <article class="archive-item">
+	      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
+	    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>
