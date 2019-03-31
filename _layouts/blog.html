@@ -1,112 +1,71 @@
 <!DOCTYPE HTML>
-<!--
-	 HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
+
+<head>
     {% include head.html %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</head>
-	</head>
-	<body class="is-loading">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Header -->
-				<header id="header">
-					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-				</header>
-
-
-				<!-- Nav -->
-					<nav id="nav">
-
+<body class="is-loading">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+        <!-- Header -->
+        <header id="header">
+            <a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+        </header>
+        <!-- Nav -->
+        <nav id="nav">
             {% include nav.html %}
-					</nav>
+        </nav>
+        <!-- Main -->
+        <div id="main">
+            <article class="post featured">
+                <header class="major">
+                    <h2 style="font-size: 64px;"><a href="#">Code for Dream</a></h2>
+                    <p>Code is kind of tricky; however, coding is like doing magic, spell out your special spell than the compiler will do the hard work for you. So have some time learn coding, it will be the most fustrating but satisfied experience you ever had.</p>
+                </header>
+                <div style="text-align: center">
+                    <h2 style="font-size: 36px;">My Blog List</h2>
+                </div>
+                <div class="bd-example bd-example-tabs">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                        </li>
+                        {% for category in site.categories %}
+                        {% capture category_name %}{{ category | first }}{% endcapture %}
+                        <li class="nav-item">
+                            <a class="nav-link" id="home-tab" data-toggle="tab" href="#{{category_name}}_tab" role="tab" aria-controls="home" aria-selected="true">{{ category_name }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <!-- <h3 class="category-head"> -->
+                    <!-- </h3> -->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <br>
+                            <p class='h5'>
+                                In this page you will see my personal project and some of my personal view of my important experience. My current ongoing project is Tracker which you may have a much well perspective in my intoduction, In this project we mostly use <b>Python, Html/CSS , JavaScript, Java</b>. If you like to learn more, you are welcome to my <a href="https://github.com/jameslee5656/2018Project-Tracker">Github</a>
+                            <p>
+                        </div>
+                        {% for category in site.categories %}
+                        {% capture category_name %}{{ category | first }}{% endcapture %}
+                        <div class="tab-pane fade" id="{{ category_name }}_tab" role="tabpanel" aria-labelledby="home-tab">
+                        	{% assign sorted = site.categories[category_name] | sort="title"%}
+							{% for post in sorted %}
+								<br>
+                        		<h5 class='text-left'><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h5>
+                        	{% endfor %}
+                    	</div>
+                    	{% endfor %}
+                    </div>       
+                </div>
+            </article>
+        </div>
+</body>
 
-				<!-- Main -->
-				<div id="main">
-
-          <article class="post featured">
-            <header class="major">
-              <h2><a href="#">Code for Dream</a></h2>
-              <p>Code is kind of tricky; however, coding is like doing magic, spell out your special spell than the compiler will do the hard work for you. So have some time learn coding, it will be the most fustrating but satisfied experience you ever had.</p>
-            </header>
-			<p>
-				In this page you will see my personal project and some of my personal view of my important experience. My current ongoing project is Tracker which you may have a much well perspective in my intoduction, In this project we mostly use <b>Python, Html/CSS , JavaScript, Java</b>. If you like to learn more, welcome to my <a href="https://github.com/jameslee5656/2018Project-Tracker">Github</a> 
-			<p>
-			<!-- <div style="background: rgba(0,0,0)">
-          		<nav id="nav" style="background: rgba(255,255,255,0.17);">
-	          		<ul class="links  bd-highlight">Personal</ul>
-	          		<ul class="links">Tracker</ul>
-	          		<ul class="links">Learning Notes</ul>          		
-	          	</nav>
-          	</div> -->
-          	<div style="text-align: center"><h2 style="font-size: 36px;">My Blog List</h2></div>
-          	<div class="bd-example bd-example-tabs">
-          		<ul class="nav nav-tabs" id="myTab" role="tablist">
-          			{% for category in site.categories %}
-          		  	{% capture category_name %}{{ category | first }}{% endcapture %}
-				  	<li class="nav-item">
-				    	<a class="nav-link active" id="home-tab" data-toggle="tab" href="#{{category_name}}" role="tab" aria-controls="home" aria-selected="true"><!-- <h3 class="category-head"> -->{{ category_name }}<!-- </h3> --></a>
-				  	</li>
-				    {% endfor %}
-				</ul>
-				<div class="tab-content" id="myTabContent">
-					{% for category in site.categories %}
-          		  	{% capture category_name %}{{ category | first }}{% endcapture %}
-				  	<div class="tab-pane fade show active" id="{{ category_name }}" role="tabpanel" aria-labelledby="home-tab">
-				  		{% assign sorted = site.categories[category_name] | sort="title"%}
-    					{% for post in sorted %}
-    						<a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
-    					{% endfor %}
-				  	</div>
-				  	{% endfor %}
-				  <!-- <div class="tab-pane fade" id="tab2" role="tabpane2" aria-labelledby="profile-tab">Test content</div>
-				  <div class="tab-pane fade" id="tab3" role="tabpane3" aria-labelledby="contact-tab">hello world</div> -->
-				</div>
-          	</div>
-          	<br>
-          	
-          	<!-- <div class="nav-scoller py-1 mb-2">
-          		<nav class="nav d-flex justify-content-between">
-          			<a href="#" class="p-2 text-muted">Personal</a>
-          			<a href="#" class="p-2 text-muted">Tracker</a>
-          			<a href="#" class="p-2 text-muted">Learning Notes</a>
-          		</nav>
-          	</div> -->
-
-  			<div id="archives" class="row">
-			{% for category in site.categories %}
-			  <div class="6u 18u$(small)" style="padding-bottom: 1.2em;">
-			    {% capture category_name %}{{ category | first }}{% endcapture %}
-			    <div id="#{{ category_name | slugize }}"></div>
-			    
-			    <h3 class="category-head">{{ category_name }}</h3>
-			    <a name="{{ category_name | slugize }}"></a>
-			    {% assign sorted = site.categories[category_name] | sort="title"%}
-			    {% for post in sorted %}
-				    <article class="archive-item">
-				      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-				    </article>
-			    {% endfor %}
-			  </div>
-			{% endfor %}
-			</div>
-		</article>
-
-			</div>
-
-			<!-- Scripts -->
-			{% include scripts-main.html %}
-			{% include tracking.html %}
-
-	</body>
 </html>
