@@ -11,7 +11,7 @@ description: A much comprehended understanding of AT command
  	AT commands are instructions used to control a modem. Each commands start with 'AT' or 'at'. Mostly used in GSM/GPRS modems and mobile phone. Which is the reason our NBIOT Dongle modems are controlled for. The left picture is the device that we are using. It is lierda NB-IoT USB Dongle. The SIM card we're using is provide by Fetnet.
 </div><br>
 <h2>Testing Software</h2>
-This <a href="/releases/download/v1.0.0/sscom5.11a.zip" download>link</a> provide you a testing software which is a Graphical Software to test your modem. (It is exe file so you have to use windows to execute it)
+This <a href="/assets/downloads/sscom5.11a.zip" download>link</a> provide you a testing software which is a Graphical Software to test your modem. (It is exe file so you have to use windows to execute it)
 <br>
 <h2>Commands that we use</h2>
 <ul>
