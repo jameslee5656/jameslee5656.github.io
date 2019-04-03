@@ -35,7 +35,9 @@
 }
 
 .timeline-event-copy {
-    padding: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
     position: relative;
     top: -1.875em;
     left: 4em;
